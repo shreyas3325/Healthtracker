@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack Workouts</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar glass-card">
+
+        <div>
+
+            <div class="sidebar-logo">
+                FITTRACK
+            </div>
+
+
+            <div class="sidebar-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="healthlogs.html">
+                    Health Logs
+                </a>
+
+                <a href="workouts.html">
+                    Workouts
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <h1>
+                Workouts 💪
+            </h1>
+
+            <p>
+                Manage and track
+                your workout activities.
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ADD WORKOUT FORM -->
+
+        <div class="health-form glass-card">
+
+            <h2>
+                Add Workout
+            </h2>
+
+
+            <form id="workoutForm">
+
+                <div class="form-grid">
+
+                    <input
+                        type="text"
+                        id="workoutName"
+                        placeholder="Workout Name"
+                    >
+
+                    <input
+                        type="text"
+                        id="workoutCategory"
+                        placeholder="Category"
+                    >
+
+                    <input
+                        type="number"
+                        id="workoutDuration"
+                        placeholder="Duration (mins)"
+                    >
+
+                    <input
+                        type="number"
+                        id="workoutCalories"
+                        placeholder="Calories Burned"
+                    >
+
+                </div>
+
+
+                <button class="btn">
+                    Save Workout
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+
+
+        <!-- WORKOUT LIST -->
+
+        <div class="workout-section glass-card">
+
+            <h2>
+                Workout History
+            </h2>
+
+
+            <div id="workoutList">
+
+                <div class="empty-workout">
+
+                    No workouts added yet
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/workouts.js"></script>
+
+</body>
+</html>

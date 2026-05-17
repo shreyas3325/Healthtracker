@@ -1,0 +1,402 @@
+body{
+    display:flex;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+
+    width:260px;
+
+    height:100vh;
+
+    padding:30px;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+
+.sidebar-logo{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#67e8f9;
+
+    margin-bottom:40px;
+
+}
+
+
+.sidebar-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+.sidebar-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    transition:0.3s;
+
+    font-size:15px;
+
+}
+
+
+.sidebar-links a:hover{
+
+    background:rgba(255,255,255,0.08);
+
+    transform:translateX(5px);
+
+    color:#67e8f9;
+
+}
+
+
+.logout-btn{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #0891b2
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+.logout-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* MAIN CONTENT */
+
+.main-content{
+
+    margin-left:290px;
+
+    width:100%;
+
+    padding:35px;
+
+}
+
+
+.topbar{
+
+    margin-bottom:35px;
+
+}
+
+
+.topbar h1{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+
+.topbar p{
+
+    color:#94a3b8;
+
+}
+
+
+
+/* CARDS */
+
+.cards-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+
+.dashboard-card{
+
+    padding:30px;
+
+    transition:0.3s ease;
+
+}
+
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+.dashboard-card h3{
+
+    color:#94a3b8;
+
+    margin-bottom:15px;
+
+    font-size:16px;
+
+}
+
+
+.dashboard-card h2{
+
+    font-size:34px;
+
+    color:#67e8f9;
+
+}
+
+
+
+/* HEALTH FORM */
+
+.health-form{
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+}
+
+
+.health-form h2{
+
+    margin-bottom:25px;
+
+}
+
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* WORKOUT SECTION */
+
+.workout-section{
+
+    padding:30px;
+
+}
+
+
+.workout-section h2{
+
+    margin-bottom:25px;
+
+}
+
+
+.workout-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.05);
+
+    transition:0.3s;
+
+}
+
+
+.workout-item:hover{
+
+    background:rgba(255,255,255,0.08);
+
+}
+
+
+.empty-workout{
+
+    color:#94a3b8;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+
+        margin-bottom:20px;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:20px;
+
+    }
+
+    body{
+
+        flex-direction:column;
+
+    }
+
+}
+/* BMI SECTION */
+
+.bmi-result{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    transition:0.3s ease;
+
+}
+
+
+.bmi-result:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.bmi-result h1{
+
+    font-size:64px;
+
+    color:#67e8f9;
+
+    margin-bottom:10px;
+
+    text-shadow:
+    0 0 20px rgba(103,232,249,0.5);
+
+}
+
+
+.bmi-result p{
+
+    color:#94a3b8;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+/* DELETE BUTTON */
+
+.delete-btn{
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ef4444;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.delete-btn:hover{
+
+    transform:scale(1.05);
+
+}

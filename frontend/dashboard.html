@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar glass-card">
+
+        <div>
+
+            <div class="sidebar-logo">
+                FITTRACK
+            </div>
+
+
+            <div class="sidebar-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="healthlogs.html">
+                    Health Logs
+                </a>
+
+                <a href="workouts.html">
+                    Workouts
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>
+                    Welcome Back 👋
+                </h1>
+
+                <p>
+                    Monitor your fitness
+                    journey from one place.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- SUMMARY CARDS -->
+
+        <div class="cards-grid">
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Calories
+                </h3>
+
+                <h2 id="caloriesValue">
+                    0
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Water Intake
+                </h3>
+
+                <h2 id="waterValue">
+                    0L
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Sleep
+                </h3>
+
+                <h2 id="sleepValue">
+                    0h
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Weight
+                </h3>
+
+                <h2 id="weightValue">
+                    0kg
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- BMI CALCULATOR -->
+
+        <div class="health-form glass-card">
+
+            <h2>
+                BMI Calculator
+            </h2>
+
+
+            <form id="bmiForm">
+
+                <div class="form-grid">
+
+                    <input
+                        type="number"
+                        id="heightInput"
+                        placeholder="Height (cm)"
+                    >
+
+                    <input
+                        type="number"
+                        id="bmiWeightInput"
+                        placeholder="Weight (kg)"
+                    >
+
+                </div>
+
+
+                <button class="btn">
+                    Calculate BMI
+                </button>
+
+            </form>
+
+
+            <div class="bmi-result">
+
+                <h1 id="bmiValue">
+                    0
+                </h1>
+
+                <p id="bmiStatus">
+                    Enter details to calculate BMI
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- RECENT WORKOUTS -->
+
+        <div class="workout-section glass-card">
+
+            <h2>
+                Recent Workouts
+            </h2>
+
+
+            <div id="workoutList">
+
+                <div class="empty-workout">
+
+                    No workouts added yet
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

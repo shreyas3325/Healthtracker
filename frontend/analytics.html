@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack Analytics</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar glass-card">
+
+        <div>
+
+            <div class="sidebar-logo">
+                FITTRACK
+            </div>
+
+
+            <div class="sidebar-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="healthlogs.html">
+                    Health Logs
+                </a>
+
+                <a href="workouts.html">
+                    Workouts
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <h1>
+                Analytics Dashboard 📊
+            </h1>
+
+            <p>
+                Monitor your fitness
+                growth and progress.
+            </p>
+
+        </div>
+
+
+
+
+        <!-- STATS GRID -->
+
+        <div class="cards-grid">
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Total Workouts
+                </h3>
+
+                <h2 id="totalWorkouts">
+                    0
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Calories Burned
+                </h3>
+
+                <h2 id="totalCalories">
+                    0
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Average Sleep
+                </h3>
+
+                <h2 id="avgSleep">
+                    0h
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-card glass-card">
+
+                <h3>
+                    Water Average
+                </h3>
+
+                <h2 id="avgWater">
+                    0L
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- PROGRESS SECTION -->
+
+        <div class="health-form glass-card">
+
+            <h2>
+                Fitness Progress
+            </h2>
+
+
+            <div class="progress-container">
+
+
+                <div class="progress-item">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Daily Goal
+                        </span>
+
+                        <span>
+                            80%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:80%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="progress-item">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Workout Consistency
+                        </span>
+
+                        <span>
+                            65%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:65%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="progress-item">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Water Intake
+                        </span>
+
+                        <span>
+                            90%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:90%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/analytics.js"></script>
+
+</body>
+</html>

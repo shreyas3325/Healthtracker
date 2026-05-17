@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FitTrack Health Logs</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar glass-card">
+
+        <div>
+
+            <div class="sidebar-logo">
+                FITTRACK
+            </div>
+
+
+            <div class="sidebar-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="healthlogs.html">
+                    Health Logs
+                </a>
+
+                <a href="workouts.html">
+                    Workouts
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <h1>
+                Health Logs ❤️
+            </h1>
+
+            <p>
+                Track and manage
+                your daily health data.
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ADD LOG FORM -->
+
+        <div class="health-form glass-card">
+
+            <h2>
+                Add Health Log
+            </h2>
+
+
+            <form id="healthForm">
+
+                <div class="form-grid">
+
+                    <input
+                        type="number"
+                        id="caloriesInput"
+                        placeholder="Calories"
+                    >
+
+                    <input
+                        type="number"
+                        id="waterInput"
+                        placeholder="Water Intake (L)"
+                    >
+
+                    <input
+                        type="number"
+                        id="sleepInput"
+                        placeholder="Sleep Hours"
+                    >
+
+                    <input
+                        type="number"
+                        id="weightInput"
+                        placeholder="Weight (kg)"
+                    >
+
+                </div>
+
+
+                <button class="btn">
+                    Save Health Log
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+
+
+        <!-- HEALTH LOG LIST -->
+
+        <div class="workout-section glass-card">
+
+            <h2>
+                Health History
+            </h2>
+
+
+            <div id="healthLogsList">
+
+                <div class="empty-workout">
+
+                    No health logs added yet
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/healthlogs.js"></script>
+
+</body>
+</html>
